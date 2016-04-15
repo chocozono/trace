@@ -11,7 +11,7 @@ func TestNew(t *testing.T) {
 	if tracer == nil {
 		t.Error("Return value from New() is null")
 	} else {
-		tracer.Trace("Hello, trace package\n")
+		tracer.Trace("Hello, trace package")
 		if buf.String() != "Hello, trace package\n" {
 			t.Errorf("Wrong output value: '%s'", buf.String())
 		}
